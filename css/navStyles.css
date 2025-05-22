@@ -1,0 +1,20 @@
+nav{
+    padding-top: 10px;
+    font-family: "Mullish", Sans-Serif;
+    display: inline-block;
+}
+
+.nav-link{
+    color: #F4F1ED !important;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: black !important;
+    transform: translateY(-2px);
+}
+.nav-link.active {
+    color: black !important;
+    font-weight: bold;
+}
+

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link rel='stylesheet' type='text/css' href='css/navStyles.css' />
+        <link rel='stylesheet' type='text/css' href='css/homepage.css'/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <style>
+            header{
+                background-color:#7c9473;
+            }
+            body{
+                background-image:url();
+                font-family:mullish,"sans-serif";
+                background-color:#F4F1ED;
+            }
+            .btn{
+              
+            }
+            .btn:hover{
+                background-color:#7C9473;
+                color:white;
+            }
+            .card:hover{
+                background-color:rgba(0,0,0,0.1);
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid">
+          <div class="row py-2">
+            <div class="d-flex align-items-center justify-content-between w-100">
+              <!-- Logo on the left -->
+              <a class="navbar-brand ms-3" href="#">
+                <img src="images/humbleRoots.png" alt="logo" width="45" height="45">
+              </a>
+        
+              <!-- Nav links on the right -->
+              <nav class="nav nav-underline me-3">
+                <a class = 'nav-link' href = "index.html">Home</a>
+                <a class = 'nav-link' href = 'about.html' >About Us</a>
+                <a class = 'nav-link' href = 'info.html'>Reference</a>
+                <a class = 'nav-link' href = 'menu.html'>Menu</a>
+                <a class = 'nav-link' href = 'reservations.html#form'>Reservations</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        </header>
+        <main>
+            <div class="container py-5">
+  <div class="row justify-content-center g-4">
+    <!-- Card 1 -->
+    <div class="container py-5">
+  <div class="row justify-content-center g-4">
+    <!-- Heirloom Tomato Bruschetta -->
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Heirloom Tomato Bruschetta</h5>
+          <h6 class="card-subtitle mb-2 text-muted">$9</h6>
+          <p class="card-text">Toasted sourdough topped with fresh heirloom cherry tomatoes, garlic, basil, and olive oil.</p>
+          <button class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#modalBruschetta">Ingredients</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cashew "Cheese" Stuffed Mushrooms -->
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Cashew "Cheese" Stuffed Mushrooms</h5>
+          <h6 class="card-subtitle mb-2 text-muted">$10</h6>
+          <p class="card-text">Roasted cremini mushrooms filled with herbed cashew cheese and walnut crumble.</p>
+          <button class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#modalMushrooms">Ingredients</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Roasted Beet Carpaccio -->
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Roasted Beet Carpaccio</h5>
+          <h6 class="card-subtitle mb-2 text-muted">$11</h6>
+          <p class="card-text">Thin slices of roasted beet with citrus vinaigrette, arugula, pistachios, and cashew ricotta.</p>
+          <button class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#modalBeet">Ingredients</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Crispy Chickpea Falafel Bites -->
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Crispy Chickpea Falafel Bites</h5>
+          <h6 class="card-subtitle mb-2 text-muted">$9</h6>
+          <p class="card-text">Mini baked falafels with creamy tahini-yogurt sauce and pickled red onions.</p>
+          <button class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#modalFalafel">Ingredients</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avocado & Mango Lettuce Cups -->
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Avocado & Mango Lettuce Cups</h5>
+          <h6 class="card-subtitle mb-2 text-muted">$10</h6>
+          <p class="card-text">Fresh butter lettuce wraps filled with diced avocado, mango, lime, chili flakes, and hemp seeds.</p>
+          <button class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#modalLettuceCups">Ingredients</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stuffed Grape Leaves with Quinoa & Herbs -->
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Stuffed Grape Leaves with Quinoa & Herbs</h5>
+          <h6 class="card-subtitle mb-2 text-muted">$10</h6>
+          <p class="card-text">Hand-rolled grape leaves stuffed with lemony quinoa, parsley, dill, and mint.</p>
+          <button class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#modalGrapeLeaves">Ingredients</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spicy Cauliflower Wings -->
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Spicy Cauliflower Wings</h5>
+          <h6 class="card-subtitle mb-2 text-muted">$11</h6>
+          <p class="card-text">Baked cauliflower florets tossed in our house hot sauce, served with vegan ranch.</p>
+          <button class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#modalCauliflower">Ingredients</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrot Lox on Mini Rye Toasts -->
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Carrot Lox on Mini Rye Toasts</h5>
+          <h6 class="card-subtitle mb-2 text-muted">$10</h6>
+          <p class="card-text">Smoked carrot ribbons on toasted rye with vegan cream cheese, dill, and capers.</p>
+          <button class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#modalLox">Ingredients</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edamame & Sea Salt -->
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Edamame & Sea Salt</h5>
+          <h6 class="card-subtitle mb-2 text-muted">$8</h6>
+          <p class="card-text">Steamed edamame pods topped with flaked sea salt and toasted sesame seeds.</p>
+          <button class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#modalEdamame">Ingredients</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mini Polenta Cakes with Tapenade -->
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Mini Polenta Cakes with Tapenade</h5>
+          <h6 class="card-subtitle mb-2 text-muted">$10</h6>
+          <p class="card-text">Crispy polenta cakes topped with rich sun-dried tomato and olive tapenade.</p>
+          <button class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#modalPolenta">Ingredients</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cucumber Avocado Sushi Rolls -->
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Cucumber Avocado Sushi Rolls</h5>
+          <h6 class="card-subtitle mb-2 text-muted">$12</h6>
+          <p class="card-text">Brown rice sushi rolls filled with avocado, cucumber, and sesame seeds, served with tamari.</p>
+          <button class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#modalSushi">Ingredients</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vegan Spinach & Artichoke Dip -->
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Vegan Spinach & Artichoke Dip</h5>
+          <h6 class="card-subtitle mb-2 text-muted">$11</h6>
+          <p class="card-text">Warm and creamy dip made with sautéed spinach, artichoke hearts, and house-made cashew cream.</p>
+          <button class="btn mt-auto" data-bs-toggle="modal" data-bs-target="#modalSpinachDip">Ingredients</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Appetizer Modals -->
+<div class="modals-container">
+
+  <!-- 1. Heirloom Tomato Bruschetta -->
+  <div class="modal fade" id="modalBruschetta" tabindex="-1" aria-labelledby="modalBruschettaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalBruschettaLabel">Heirloom Tomato Bruschetta</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Ingredients:</strong>
+          <ul><li>Sourdough bread</li><li>Cherry tomatoes</li><li>Garlic</li><li>Basil</li><li>Olive oil</li></ul>
+          <strong>Sourcing:</strong>
+          <ul><li>Tomatoes: Moon Valley Farms, CA – Organic</li><li>Olive Oil: ZOE, Spain – Fair Trade</li><li>Bread: Rise Bakery – Local</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Cashew "Cheese" Stuffed Mushrooms -->
+  <div class="modal fade" id="modalMushrooms" tabindex="-1" aria-labelledby="modalMushroomsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalMushroomsLabel">Cashew "Cheese" Stuffed Mushrooms</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Ingredients:</strong>
+          <ul><li>Cremini mushrooms</li><li>Herbed cashew cheese</li><li>Walnuts</li><li>Garlic</li><li>Lemon zest</li></ul>
+          <strong>Sourcing:</strong>
+          <ul><li>Cashews: Tropical Foods – Fair Trade</li><li>Mushrooms: Earth's Harvest – Regenerative</li><li>Walnuts: Gold Ridge Orchards – Local</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Roasted Beet Carpaccio -->
+  <div class="modal fade" id="modalBeet" tabindex="-1" aria-labelledby="modalBeetLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalBeetLabel">Roasted Beet Carpaccio</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Ingredients:</strong>
+          <ul><li>Beets</li><li>Arugula</li><li>Pistachios</li><li>Citrus vinaigrette</li><li>Cashew ricotta</li></ul>
+          <strong>Sourcing:</strong>
+          <ul><li>Beets: Rainshadow Organics – Organic</li><li>Pistachios: Setton Farms – Fair Trade</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Crispy Chickpea Falafel Bites -->
+  <div class="modal fade" id="modalFalafel" tabindex="-1" aria-labelledby="modalFalafelLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalFalafelLabel">Crispy Chickpea Falafel Bites</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Ingredients:</strong>
+          <ul><li>Chickpeas</li><li>Tahini</li><li>Garlic</li><li>Herbs</li><li>Pickled red onions</li></ul>
+          <strong>Sourcing:</strong>
+          <ul><li>Chickpeas: Timeless Natural Foods – Organic</li><li>Tahini: Soom Foods – Fair Trade</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Avocado & Mango Lettuce Cups -->
+  <div class="modal fade" id="modalLettuceCups" tabindex="-1" aria-labelledby="modalLettuceCupsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalLettuceCupsLabel">Avocado & Mango Lettuce Cups</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Ingredients:</strong>
+          <ul><li>Avocado</li><li>Mango</li><li>Lime</li><li>Chili</li><li>Hemp seeds</li></ul>
+          <strong>Sourcing:</strong>
+          <ul><li>Avocados: EcoGrow – Organic</li><li>Mangoes: Equal Exchange – Fair Trade</li><li>Hemp: Navitas Organics – Non-GMO</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Stuffed Grape Leaves with Quinoa & Herbs -->
+  <div class="modal fade" id="modalGrapeLeaves" tabindex="-1" aria-labelledby="modalGrapeLeavesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalGrapeLeavesLabel">Stuffed Grape Leaves with Quinoa & Herbs</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Ingredients:</strong>
+          <ul><li>Grape leaves</li><li>Quinoa</li><li>Parsley</li><li>Dill</li><li>Mint</li><li>Lemon zest</li></ul>
+          <strong>Sourcing:</strong>
+          <ul><li>Grape Leaves: Divina – Fair Trade</li><li>Quinoa: Alter Eco – Organic</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. Spicy Cauliflower Wings -->
+  <div class="modal fade" id="modalCauliflower" tabindex="-1" aria-labelledby="modalCauliflowerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalCauliflowerLabel">Spicy Cauliflower Wings</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Ingredients:</strong>
+          <ul><li>Cauliflower</li><li>Cayenne pepper sauce</li><li>Garlic</li><li>Vegan ranch</li></ul>
+          <strong>Sourcing:</strong>
+          <ul><li>Cauliflower: Coastal Roots – Organic</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. Carrot Lox on Mini Rye Toasts -->
+  <div class="modal fade" id="modalCarrotLox" tabindex="-1" aria-labelledby="modalCarrotLoxLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalCarrotLoxLabel">Carrot Lox on Mini Rye Toasts</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Ingredients:</strong>
+          <ul><li>Carrots</li><li>Capers</li><li>Dill</li><li>Rye bread</li><li>Cashew cream cheese</li></ul>
+          <strong>Sourcing:</strong>
+          <ul><li>Carrots: Harmony Fields – Local</li><li>Bread: Rise Bakery – Whole Grain</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9. Edamame & Sea Salt -->
+  <div class="modal fade" id="modalEdamame" tabindex="-1" aria-labelledby="modalEdamameLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalEdamameLabel">Edamame & Sea Salt</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Ingredients:</strong>
+          <ul><li>Edamame</li><li>Sea salt</li><li>Sesame seeds</li></ul>
+          <strong>Sourcing:</strong>
+          <ul><li>Edamame: Sustainable Harvests Co-op – Non-GMO</li><li>Sesame: EthiCo – Fair Trade</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10. Mini Polenta Cakes with Tapenade -->
+  <div class="modal fade" id="modalPolenta" tabindex="-1" aria-labelledby="modalPolentaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalPolentaLabel">Mini Polenta Cakes with Tapenade</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Ingredients:</strong>
+          <ul><li>Polenta</li><li>Sun-dried tomatoes</li><li>Olives</li><li>Herbs</li></ul>
+          <strong>Sourcing:</strong>
+          <ul><li>Polenta: Bob's Red Mill – Organic</li><li>Tomatoes: Mediterranean Harvest – Fair Trade</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 11. Cucumber Avocado Sushi Rolls -->
+  <div class="modal fade" id="modalSushi" tabindex="-1" aria-labelledby="modalSushiLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalSushiLabel">Cucumber Avocado Sushi Rolls</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Ingredients:</strong>
+          <ul><li>Brown rice</li><li>Avocado</li><li>Cucumber</li><li>Sesame</li><li>Tamari</li></ul>
+          <strong>Sourcing:</strong>
+          <ul><li>Avocados: EcoGrow – Organic</li><li>Rice: Lotus Foods – Biodiverse</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 12. Vegan Spinach & Artichoke Dip -->
+  <div class="modal fade" id="modalDip" tabindex="-1" aria-labelledby="modalDipLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalDipLabel">Vegan Spinach & Artichoke Dip</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Ingredients:</strong>
+          <ul><li>Spinach</li><li>Artichokes</li><li>Cashews</li><li>Garlic</li><li>Nutritional yeast</li></ul>
+          <strong>Sourcing:</strong>
+          <ul><li>Spinach & Artichokes: Red Barn Farm – Local</li><li>Cashews: Tropical Foods – Fair Trade</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+        </main>
+        <footer></footer>
+    </body>
+</html>
